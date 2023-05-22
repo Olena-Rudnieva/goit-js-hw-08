@@ -32,8 +32,7 @@ function onFormSubmit(evt) {
 
 function saveData() {
   if (inputData) {
-    let { email, message } = formEl.elements;
-    email.value = inputData.email || '';
-    message.value = inputData.message || '';
+    inputEl.value = inputData.email || '';
+    textareaEl.value = inputData.message || '';
   }
 }
